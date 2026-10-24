@@ -19,15 +19,15 @@ Rozszerzenia nie ma jeszcze w sklepie Chrome, więc instalujesz je ręcznie. Zaj
 
 ### 1. Pobierz pliki
 
-- **Najprościej:** na tej stronie kliknij zielony przycisk **Code**, potem **Download ZIP** i rozpakuj archiwum. Dostaniesz folder `no-shorts-main`.
-- **Przez git:** `git clone https://github.com/safenest-oss/no-shorts.git`
+- **Najprościej (bez wiedzy technicznej):** pobierz plik `no-shorts-vX.Y.Z.zip` z [najnowszego wydania](https://github.com/safenest-oss/no-shorts/releases/latest), rozpakuj go i otwórz `START-TUTAJ.html`, w którym jest przewodnik krok po kroku. Folder `no-shorts` w środku to samo rozszerzenie.
+- **Ze źródeł:** kliknij zielony przycisk **Code**, potem **Download ZIP**, albo użyj `git clone https://github.com/safenest-oss/no-shorts.git`
 
 ### 2. Wczytaj do Chrome
 
 1. Otwórz nową kartę i wpisz `chrome://extensions`
 2. Włącz **Tryb programisty** (przełącznik w prawym górnym rogu)
 3. Kliknij **Załaduj rozpakowane**
-4. Wskaż folder `no-shorts-main` (ten, w którym jest plik `manifest.json`) i zatwierdź
+4. Wskaż folder, w którym jest plik `manifest.json` (w paczce wydania to `no-shorts`), i zatwierdź
 5. „No Shorts" pojawi się na liście rozszerzeń. Możesz je przypiąć ikoną puzzla na pasku narzędzi
 
 > Po ponownym uruchomieniu przeglądarki Chrome może wyświetlić komunikat o wyłączeniu rozszerzeń trybu programisty. Wybierz zachowanie rozszerzenia. Komunikat zniknie, gdy rozszerzenie trafi do sklepu Chrome.

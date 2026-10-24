@@ -19,15 +19,15 @@ The extension is not yet in the Chrome Web Store, so you install it manually. It
 
 ### 1. Get the files
 
-- **Easiest:** on this page click the green **Code** button, then **Download ZIP**, and unzip it. You get a folder named `no-shorts-main`.
-- **With git:** `git clone https://github.com/safenest-oss/no-shorts.git`
+- **Easiest (no technical knowledge needed):** download `no-shorts-vX.Y.Z.zip` from the [latest release](https://github.com/safenest-oss/no-shorts/releases/latest), unzip it and open `START-TUTAJ.html` for a step-by-step guide (in Polish). The `no-shorts` folder inside is the extension.
+- **From source:** click the green **Code** button, then **Download ZIP**, or run `git clone https://github.com/safenest-oss/no-shorts.git`
 
 ### 2. Load it into Chrome
 
 1. Open a new tab and go to `chrome://extensions`
 2. Turn on **Developer mode** (switch in the top right corner)
 3. Click **Load unpacked**
-4. Select the `no-shorts-main` folder (the one containing `manifest.json`) and confirm
+4. Select the `no-shorts` folder (the one containing `manifest.json`) and confirm
 5. "No Shorts" appears on the list of extensions. Optionally pin it with the puzzle icon in the toolbar
 
 > Chrome may show a "Disable developer mode extensions" notice when you restart the browser. Choose to keep the extension. This message disappears once the extension is available in the Chrome Web Store.
