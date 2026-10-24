@@ -50,6 +50,7 @@ The mock page (`tests/mock-youtube.html`) is a simplification. A passing test do
 ## Conventions
 
 - Commits: Conventional Commits (`feat:`, `fix:`, `docs:`, `chore:`, `ci:`) in English, imperative mood
+- Authorship: commits are authored by the repository owner. AI assistants must not add themselves as author or add `Co-Authored-By` trailers
 - Code, README and issues in English. Guides for parents in Polish and English
 - Keep pull requests small and focused; describe how you tested
 
