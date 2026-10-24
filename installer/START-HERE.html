@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>No Shorts – step-by-step installation</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; font-size: 20px; line-height: 1.6; max-width: 760px; margin: 0 auto; padding: 24px 20px 64px; }
+  h1 { font-size: 2em; margin-bottom: 0.2em; }
+  h2 { margin-top: 1.8em; font-size: 1.4em; }
+  .lead { font-size: 1.1em; opacity: .85; }
+  .lang { font-size: .85em; margin: 0 0 1em; }
+  .step { display: flex; gap: 16px; margin: 20px 0; padding: 16px 18px; border: 2px solid #8884; border-radius: 14px; }
+  .num { flex: 0 0 auto; width: 2.2em; height: 2.2em; border-radius: 50%; background: #2563eb; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; }
+  .step p { margin: 0 0 .4em; }
+  code, .addr { font-family: ui-monospace, Consolas, monospace; background: #8882; padding: 2px 8px; border-radius: 6px; }
+  .addr { display: inline-block; font-size: 1.1em; user-select: all; }
+  .warn { border-left: 6px solid #d97706; background: #d9770618; padding: 12px 16px; border-radius: 8px; margin: 18px 0; }
+  .ok { border-left: 6px solid #16a34a; background: #16a34a18; padding: 12px 16px; border-radius: 8px; margin: 18px 0; }
+  ul { padding-left: 1.2em; }
+  li { margin: .3em 0; }
+  footer { margin-top: 3em; font-size: .85em; opacity: .7; }
+</style>
+</head>
+<body>
+
+<p class="lang"><a href="START-TUTAJ.html">Wersja polska</a></p>
+
+<h1>No Shorts</h1>
+<p class="lead">A browser extension that removes YouTube Shorts (the short videos you can scroll through endlessly). Installation takes about 2 minutes and needs no technical knowledge.</p>
+
+<div class="ok">
+  <strong>Safe and private.</strong> The extension collects no data, makes no internet connections and only runs on youtube.com. All of its code is open and can be inspected.
+</div>
+
+<h2>Before you start</h2>
+<p>You need a computer (Windows or Mac) with the <strong>Google Chrome</strong> browser. The extension also works in Edge, Brave and Opera. It does not work in the YouTube app on a phone.</p>
+
+<h2>Installation</h2>
+
+<div class="step">
+  <div class="num">1</div>
+  <div>
+    <p><strong>Unzip the downloaded file.</strong></p>
+    <p>Windows: right-click the file, choose <em>Extract All…</em>, then <em>Extract</em>.<br>
+    Mac: double-click the file.</p>
+    <p>You will get a normal folder with files in it. <strong>Do not install from inside the zip file</strong> – this is the most common cause of problems.</p>
+  </div>
+</div>
+
+<div class="step">
+  <div class="num">2</div>
+  <div>
+    <p><strong>Move the folder to a permanent place.</strong></p>
+    <p>For example to your <em>Documents</em> folder. The browser will keep using these files, so <strong>do not delete them</strong> after installing.</p>
+  </div>
+</div>
+
+<div class="step">
+  <div class="num">3</div>
+  <div>
+    <p><strong>Open the extensions page in Chrome.</strong></p>
+    <p>Click the address bar at the top of the browser, type the address below and press Enter:</p>
+    <p><span class="addr">chrome://extensions</span></p>
+    <p>In Edge type <code>edge://extensions</code>, in Brave <code>brave://extensions</code>.</p>
+  </div>
+</div>
+
+<div class="step">
+  <div class="num">4</div>
+  <div>
+    <p><strong>Turn on “Developer mode”.</strong></p>
+    <p>It is a switch in the <strong>top right corner</strong> of the page. Click it so that it turns blue. Don’t worry about the name – it only allows loading an extension from a file.</p>
+  </div>
+</div>
+
+<div class="step">
+  <div class="num">5</div>
+  <div>
+    <p><strong>Click “Load unpacked”.</strong></p>
+    <p>The button appears at the top left once Developer mode is on.</p>
+  </div>
+</div>
+
+<div class="step">
+  <div class="num">6</div>
+  <div>
+    <p><strong>Choose the <code>no-shorts</code> folder.</strong></p>
+    <p>Among the unzipped files you will find a folder named <code>no-shorts</code>. Select <em>that</em> folder (it has a file called <code>manifest.json</code> inside) and click <em>Select Folder</em>.</p>
+  </div>
+</div>
+
+<div class="ok">
+  <strong>Done!</strong> A “No Shorts” card with its switch turned on should now appear in the list of extensions.
+</div>
+
+<h2>How to check that it works</h2>
+<p>Go to <strong>youtube.com</strong> and refresh the page (press F5). You should see that:</p>
+<ul>
+  <li>the home page has no “Shorts” section between the videos,</li>
+  <li>the menu on the left has no “Shorts” item,</li>
+  <li>channels have no “Shorts” tab,</li>
+  <li>a link to a Short opens like a regular video.</li>
+</ul>
+<p>Want to compare? Turn off the switch on the “No Shorts” card in <code>chrome://extensions</code>, refresh YouTube and see the difference. Then turn it back on.</p>
+
+<h2>Good to know</h2>
+<div class="warn">
+  When you restart the browser, Chrome may show a message about <strong>developer mode extensions</strong>. Choose to keep them (do not disable). This message will go away once the extension is available in the official Chrome store.
+</div>
+
+<h2>Installing for a child</h2>
+<p>The extension stops working if a child removes or disables it. So it is best to:</p>
+<ul>
+  <li>install it on an account that your child cannot change, for example a profile supervised with <strong>Google Family Link</strong>,</li>
+  <li>talk to your child about why you use it. A conversation protects better than any tool.</li>
+</ul>
+
+<h2>Something not working?</h2>
+<ul>
+  <li><strong>I can’t see the “Load unpacked” button.</strong> Check that Developer mode is on (step 4).</li>
+  <li><strong>Error “Manifest file is missing or unreadable”.</strong> You picked the wrong folder. Choose the one that directly contains the <code>manifest.json</code> file (the <code>no-shorts</code> folder).</li>
+  <li><strong>A Short still shows up.</strong> YouTube changes its pages often. Please tell us: <span class="addr">github.com/safenest-oss/no-shorts/issues</span></li>
+</ul>
+
+<footer>
+  No Shorts is part of SafeNest – small, open tools that make the Internet safer for children. MIT license. Code and latest versions: github.com/safenest-oss/no-shorts
+</footer>
+
+</body>
+</html>

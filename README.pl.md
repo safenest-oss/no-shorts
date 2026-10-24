@@ -19,7 +19,7 @@ Rozszerzenia nie ma jeszcze w sklepie Chrome, więc instalujesz je ręcznie. Zaj
 
 ### 1. Pobierz pliki
 
-- **Najprościej (bez wiedzy technicznej):** pobierz plik `no-shorts-vX.Y.Z.zip` z [najnowszego wydania](https://github.com/safenest-oss/no-shorts/releases/latest), rozpakuj go i otwórz `START-TUTAJ.html`, w którym jest przewodnik krok po kroku. Folder `no-shorts` w środku to samo rozszerzenie.
+- **Najprościej (bez wiedzy technicznej):** pobierz plik `no-shorts-vX.Y.Z.zip` z [najnowszego wydania](https://github.com/safenest-oss/no-shorts/releases/latest), rozpakuj go i otwórz `START-TUTAJ.html` (po polsku) albo `START-HERE.html` (po angielsku), w których jest przewodnik krok po kroku. Folder `no-shorts` w środku to samo rozszerzenie.
 - **Ze źródeł:** kliknij zielony przycisk **Code**, potem **Download ZIP**, albo użyj `git clone https://github.com/safenest-oss/no-shorts.git`
 
 ### 2. Wczytaj do Chrome

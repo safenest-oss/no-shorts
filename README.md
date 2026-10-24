@@ -19,7 +19,7 @@ The extension is not yet in the Chrome Web Store, so you install it manually. It
 
 ### 1. Get the files
 
-- **Easiest (no technical knowledge needed):** download `no-shorts-vX.Y.Z.zip` from the [latest release](https://github.com/safenest-oss/no-shorts/releases/latest), unzip it and open `START-TUTAJ.html` for a step-by-step guide (in Polish). The `no-shorts` folder inside is the extension.
+- **Easiest (no technical knowledge needed):** download `no-shorts-vX.Y.Z.zip` from the [latest release](https://github.com/safenest-oss/no-shorts/releases/latest), unzip it and open `START-HERE.html` (English) or `START-TUTAJ.html` (Polish) for a step-by-step guide. The `no-shorts` folder inside is the extension.
 - **From source:** click the green **Code** button, then **Download ZIP**, or run `git clone https://github.com/safenest-oss/no-shorts.git`
 
 ### 2. Load it into Chrome

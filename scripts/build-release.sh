@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Builds a ready-to-install package for non-technical users:
 #   dist/no-shorts-v<version>.zip
+#     START-HERE.html    (installation guide in English)
 #     START-TUTAJ.html   (installation guide in Polish)
 #     no-shorts/         (the extension itself)
 set -euo pipefail
@@ -15,7 +16,7 @@ rm -rf dist
 mkdir -p "${STAGE}/no-shorts"
 
 cp manifest.json content.css content.js LICENSE "${STAGE}/no-shorts/"
-cp installer/START-TUTAJ.html "${STAGE}/"
+cp installer/START-HERE.html installer/START-TUTAJ.html "${STAGE}/"
 
 (cd "${STAGE}" && zip -r -q "../no-shorts-v${VERSION}.zip" .)
 rm -rf "${STAGE}"
