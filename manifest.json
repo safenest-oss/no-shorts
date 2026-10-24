@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "No Shorts",
+  "version": "1.0.0",
+  "description": "Blokuje YouTube Shorts: ukrywa je w feedzie, wyszukiwarce i menu oraz przekierowuje linki do zwykłego odtwarzacza.",
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*", "*://m.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_start"
+    }
+  ]
+}

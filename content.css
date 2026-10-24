@@ -1,0 +1,25 @@
+/* Półki Shorts na stronie głównej, w subskrypcjach i wynikach */
+ytd-rich-shelf-renderer[is-shorts],
+ytd-reel-shelf-renderer,
+grid-shelf-view-model:has(a[href^="/shorts/"]),
+
+/* Pojedyncze filmy Shorts na listach */
+ytd-video-renderer:has(a[href^="/shorts/"]),
+ytd-grid-video-renderer:has(a[href^="/shorts/"]),
+ytd-rich-item-renderer:has(a[href^="/shorts/"]),
+ytd-compact-video-renderer:has(a[href^="/shorts/"]),
+ytm-shorts-lockup-view-model,
+ytm-shorts-lockup-view-model-v2,
+
+/* Menu boczne i dolny pasek */
+ytd-guide-entry-renderer:has(a[href^="/shorts"]),
+ytd-mini-guide-entry-renderer:has(a[href^="/shorts"]),
+
+/* Zakładka Shorts na kanale */
+yt-tab-shape[tab-title="Shorts"],
+tp-yt-paper-tab:has(a[href$="/shorts"]),
+
+/* Chip filtra "Shorts" */
+yt-chip-cloud-chip-renderer:has(a[href*="/shorts"]) {
+  display: none !important;
+}
