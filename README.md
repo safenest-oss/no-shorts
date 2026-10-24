@@ -1,6 +1,8 @@
 # No Shorts
 
-A tiny Chrome extension (Manifest V3) that removes YouTube Shorts from your experience.
+[Polski](README.pl.md) | English
+
+A tiny Chrome extension (Manifest V3) that removes YouTube Shorts from your experience. Part of [SafeNest](https://github.com/safenest-oss), a collection of small open source tools that make the Internet safer for children.
 
 ## Features
 
@@ -11,14 +13,48 @@ A tiny Chrome extension (Manifest V3) that removes YouTube Shorts from your expe
 
 No tracking, no network requests, no special permissions. The extension only runs on `youtube.com`.
 
-## Installation (from source)
+## Installation
 
-1. Clone or download this repository
-2. Open `chrome://extensions`
-3. Enable **Developer mode**
-4. Click **Load unpacked** and select the project folder
+The extension is not yet in the Chrome Web Store, so you install it manually. It takes about a minute and works in Chrome, Edge, Brave and Opera on a computer.
 
-Works in Chromium-based browsers (Chrome, Edge, Brave, Opera).
+### 1. Get the files
+
+- **Easiest:** on this page click the green **Code** button, then **Download ZIP**, and unzip it. You get a folder named `no-shorts-main`.
+- **With git:** `git clone https://github.com/safenest-oss/no-shorts.git`
+
+### 2. Load it into Chrome
+
+1. Open a new tab and go to `chrome://extensions`
+2. Turn on **Developer mode** (switch in the top right corner)
+3. Click **Load unpacked**
+4. Select the `no-shorts-main` folder (the one containing `manifest.json`) and confirm
+5. "No Shorts" appears on the list of extensions. Optionally pin it with the puzzle icon in the toolbar
+
+> Chrome may show a "Disable developer mode extensions" notice when you restart the browser. Choose to keep the extension. This message disappears once the extension is available in the Chrome Web Store.
+
+### 3. Updating
+
+Download the new version, replace the folder contents, then click the reload icon on the extension's card in `chrome://extensions`.
+
+### Installing for a child (parents)
+
+On your child's computer, use a Chrome profile that your child cannot change, for example a supervised profile managed with Google Family Link, or a managed browser policy that force-installs the extension. A regular extension can be switched off by the user, so it works best together with these controls and a conversation about why you use it.
+
+## How to check that it works
+
+Open [youtube.com](https://www.youtube.com) and verify:
+
+| Check | Expected result |
+|---|---|
+| Home page | No "Shorts" shelf between the videos |
+| Left sidebar | No "Shorts" entry |
+| Search for any popular topic | Results contain only regular videos, no Shorts row |
+| Open a channel and look at its tabs | No "Shorts" tab |
+| Paste a link like `youtube.com/shorts/<ID>` in the address bar | It opens as a normal video (`/watch?v=<ID>`) |
+
+To compare, turn the extension off with the switch in `chrome://extensions` and reload YouTube: the Shorts come back. Turn it on again to block them.
+
+If a Short slips through, see [Known limitations](#known-limitations).
 
 ## How it works
 
@@ -27,18 +63,20 @@ Works in Chromium-based browsers (Chrome, Edge, Brave, Opera).
 
 ## Known limitations
 
-YouTube changes its markup regularly, so some selectors may stop working over time. If a Short slips through, please open an issue with the element's tag name and a link to the page (or a screenshot of DevTools).
+YouTube changes its markup regularly, so some selectors may stop working over time. If a Short slips through, please [open an issue](../../issues/new/choose) with the page where it appeared and, if you can, the element's tag name from DevTools.
+
+The extension works in desktop browsers. It does not affect the YouTube mobile app.
 
 ## Roadmap
 
-- [ ] Popup with an on/off toggle
+- [ ] Popup with an on/off toggle and age profiles
 - [ ] Allow-list for selected channels
 - [ ] Firefox support
 - [ ] Publish to the Chrome Web Store
 
 ## Contributing
 
-Issues and pull requests are welcome. For selector fixes, just edit `content.css` and describe where the Short appeared.
+Issues and pull requests are welcome. For selector fixes, just edit `content.css` and describe where the Short appeared. See the SafeNest [contributing guide](https://github.com/safenest-oss/.github/blob/main/CONTRIBUTING.md).
 
 ## License
 
