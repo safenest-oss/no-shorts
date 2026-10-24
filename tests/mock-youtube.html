@@ -1,0 +1,21 @@
+<!doctype html><html><head><title>mock</title></head><body>
+<ytd-guide-renderer>
+  <ytd-guide-entry-renderer id="home"><a title="Home" href="/"><yt-formatted-string>Home</yt-formatted-string></a></ytd-guide-entry-renderer>
+  <ytd-guide-entry-renderer id="shorts-a"><a title="Shorts" href="/shorts/"><yt-formatted-string>Shorts</yt-formatted-string></a></ytd-guide-entry-renderer>
+  <ytd-guide-entry-renderer id="shorts-b"><a href="https://www.youtube.com/feed/x"><span>Shorts</span></a></ytd-guide-entry-renderer>
+  <ytd-guide-entry-renderer id="subs"><a title="Subscriptions" href="/feed/subscriptions"><yt-formatted-string>Subscriptions</yt-formatted-string></a></ytd-guide-entry-renderer>
+</ytd-guide-renderer>
+<ytd-mini-guide-renderer>
+  <ytd-mini-guide-entry-renderer id="mini-shorts" aria-label="Shorts"><a href="/shorts/"><span>Shorts</span></a></ytd-mini-guide-entry-renderer>
+</ytd-mini-guide-renderer>
+<div id="feed">
+  <ytd-rich-item-renderer id="video1"><a href="/watch?v=aaa">normal video</a></ytd-rich-item-renderer>
+  <ytd-rich-item-renderer id="short1"><a href="/shorts/bbb">a short</a></ytd-rich-item-renderer>
+  <ytd-rich-shelf-renderer id="shelf" is-shorts><a href="/shorts/ccc">shelf</a></ytd-rich-shelf-renderer>
+  <ytd-video-renderer id="short2"><a href="/shorts/ddd">short in search</a></ytd-video-renderer>
+  <ytd-video-renderer id="video2"><a href="/watch?v=eee">normal in search</a></ytd-video-renderer>
+</div>
+<div id="tabs"><yt-tab-shape id="tab-shorts"><span>Shorts</span></yt-tab-shape><yt-tab-shape id="tab-videos"><span>Videos</span></yt-tab-shape></div>
+<div id="late"></div>
+<script>setTimeout(()=>{document.getElementById('late').innerHTML='<ytd-rich-item-renderer id="short-late"><a href="/shorts/zzz">late short</a></ytd-rich-item-renderer>'},800)</script>
+</body></html>

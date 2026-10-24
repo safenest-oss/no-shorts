@@ -1,25 +1,37 @@
-/* Półki Shorts na stronie głównej, w subskrypcjach i wynikach */
-ytd-rich-shelf-renderer[is-shorts],
-ytd-reel-shelf-renderer,
-grid-shelf-view-model:has(a[href^="/shorts/"]),
+/*
+  No Shorts - hides Shorts UI.
+  Every selector is its own rule on purpose: if a browser does not understand
+  one selector, a combined rule would be dropped entirely.
+  content.js adds a second, text-based layer on top of this.
+*/
 
-/* Pojedyncze filmy Shorts na listach */
-ytd-video-renderer:has(a[href^="/shorts/"]),
-ytd-grid-video-renderer:has(a[href^="/shorts/"]),
-ytd-rich-item-renderer:has(a[href^="/shorts/"]),
-ytd-compact-video-renderer:has(a[href^="/shorts/"]),
-ytm-shorts-lockup-view-model,
-ytm-shorts-lockup-view-model-v2,
+/* Shorts shelves on the home page, subscriptions and in results */
+ytd-rich-shelf-renderer[is-shorts] { display: none !important; }
+ytd-reel-shelf-renderer { display: none !important; }
+grid-shelf-view-model:has(a[href*="/shorts/"]) { display: none !important; }
 
-/* Menu boczne i dolny pasek */
-ytd-guide-entry-renderer:has(a[href^="/shorts"]),
-ytd-mini-guide-entry-renderer:has(a[href^="/shorts"]),
+/* Individual Shorts in lists */
+ytd-video-renderer:has(a[href*="/shorts/"]) { display: none !important; }
+ytd-grid-video-renderer:has(a[href*="/shorts/"]) { display: none !important; }
+ytd-rich-item-renderer:has(a[href*="/shorts/"]) { display: none !important; }
+ytd-compact-video-renderer:has(a[href*="/shorts/"]) { display: none !important; }
+ytd-reel-item-renderer { display: none !important; }
+ytm-shorts-lockup-view-model { display: none !important; }
+ytm-shorts-lockup-view-model-v2 { display: none !important; }
 
-/* Zakładka Shorts na kanale */
-yt-tab-shape[tab-title="Shorts"],
-tp-yt-paper-tab:has(a[href$="/shorts"]),
+/* Sidebar and mini sidebar */
+ytd-guide-entry-renderer:has(a[href^="/shorts"]) { display: none !important; }
+ytd-guide-entry-renderer:has(a[title="Shorts"]) { display: none !important; }
+ytd-mini-guide-entry-renderer:has(a[href^="/shorts"]) { display: none !important; }
+ytd-mini-guide-entry-renderer[aria-label="Shorts"] { display: none !important; }
+yt-guide-entry-view-model:has(a[href^="/shorts"]) { display: none !important; }
 
-/* Chip filtra "Shorts" */
-yt-chip-cloud-chip-renderer:has(a[href*="/shorts"]) {
-  display: none !important;
-}
+/* "Shorts" tab on channel pages */
+yt-tab-shape[tab-title="Shorts"] { display: none !important; }
+tp-yt-paper-tab:has(a[href$="/shorts"]) { display: none !important; }
+
+/* "Shorts" filter chip */
+yt-chip-cloud-chip-renderer:has(a[href*="/shorts"]) { display: none !important; }
+
+/* Anything content.js has marked */
+[data-no-shorts-hidden] { display: none !important; }
