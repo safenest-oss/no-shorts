@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>No Shorts – instalacja krok po kroku</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif; font-size: 20px; line-height: 1.6; max-width: 760px; margin: 0 auto; padding: 24px 20px 64px; }
+  h1 { font-size: 2em; margin-bottom: 0.2em; }
+  h2 { margin-top: 1.8em; font-size: 1.4em; }
+  .lead { font-size: 1.1em; opacity: .85; }
+  .step { display: flex; gap: 16px; margin: 20px 0; padding: 16px 18px; border: 2px solid #8884; border-radius: 14px; }
+  .num { flex: 0 0 auto; width: 2.2em; height: 2.2em; border-radius: 50%; background: #2563eb; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; }
+  .step p { margin: 0 0 .4em; }
+  code, .addr { font-family: ui-monospace, Consolas, monospace; background: #8882; padding: 2px 8px; border-radius: 6px; }
+  .addr { display: inline-block; font-size: 1.1em; user-select: all; }
+  .warn { border-left: 6px solid #d97706; background: #d9770618; padding: 12px 16px; border-radius: 8px; margin: 18px 0; }
+  .ok { border-left: 6px solid #16a34a; background: #16a34a18; padding: 12px 16px; border-radius: 8px; margin: 18px 0; }
+  ul { padding-left: 1.2em; }
+  li { margin: .3em 0; }
+  footer { margin-top: 3em; font-size: .85em; opacity: .7; }
+</style>
+</head>
+<body>
+
+<h1>No Shorts</h1>
+<p class="lead">Rozszerzenie do przeglądarki, które usuwa z YouTube krótkie filmy „Shorts" (te przewijane w nieskończoność). Instalacja zajmuje około 2 minut i nie wymaga żadnej wiedzy technicznej.</p>
+
+<div class="ok">
+  <strong>Bezpieczne i prywatne.</strong> Rozszerzenie nie zbiera żadnych danych, nie łączy się z Internetem i działa tylko na stronie youtube.com. Cały kod jest otwarty i można go sprawdzić.
+</div>
+
+<h2>Zanim zaczniesz</h2>
+<p>Potrzebujesz komputera (Windows lub Mac) z przeglądarką <strong>Google Chrome</strong>. Rozszerzenie działa też w Edge, Brave i Operze. Nie zadziała w aplikacji YouTube na telefonie.</p>
+
+<h2>Instalacja</h2>
+
+<div class="step">
+  <div class="num">1</div>
+  <div>
+    <p><strong>Rozpakuj pobrany plik.</strong></p>
+    <p>Windows: kliknij plik prawym przyciskiem myszy, wybierz <em>Wypakuj wszystko…</em>, potem <em>Wypakuj</em>.<br>
+    Mac: kliknij plik dwa razy.</p>
+    <p>Dostaniesz zwykły folder z plikami. <strong>Nie otwieraj instalacji z wnętrza spakowanego pliku</strong> – to najczęstsza przyczyna problemów.</p>
+  </div>
+</div>
+
+<div class="step">
+  <div class="num">2</div>
+  <div>
+    <p><strong>Przenieś folder w trwałe miejsce.</strong></p>
+    <p>Na przykład do folderu <em>Dokumenty</em>. Przeglądarka będzie korzystać z tych plików za każdym razem, więc <strong>nie usuwaj ich</strong> po instalacji.</p>
+  </div>
+</div>
+
+<div class="step">
+  <div class="num">3</div>
+  <div>
+    <p><strong>Otwórz stronę rozszerzeń w Chrome.</strong></p>
+    <p>Kliknij w pasek adresu na górze przeglądarki, wpisz poniższy adres i naciśnij Enter:</p>
+    <p><span class="addr">chrome://extensions</span></p>
+    <p>W Edge wpisz <code>edge://extensions</code>, w Brave <code>brave://extensions</code>.</p>
+  </div>
+</div>
+
+<div class="step">
+  <div class="num">4</div>
+  <div>
+    <p><strong>Włącz „Tryb programisty".</strong></p>
+    <p>To przełącznik w <strong>prawym górnym rogu</strong> strony. Kliknij go, aby zrobił się niebieski. Nie martw się nazwą – to tylko pozwala wczytać rozszerzenie z pliku.</p>
+  </div>
+</div>
+
+<div class="step">
+  <div class="num">5</div>
+  <div>
+    <p><strong>Kliknij „Załaduj rozpakowane".</strong></p>
+    <p>Przycisk pojawi się po lewej stronie u góry po włączeniu trybu programisty.</p>
+  </div>
+</div>
+
+<div class="step">
+  <div class="num">6</div>
+  <div>
+    <p><strong>Wybierz folder <code>no-shorts</code>.</strong></p>
+    <p>W rozpakowanych plikach znajdziesz folder o nazwie <code>no-shorts</code>. Zaznacz <em>właśnie ten</em> folder (w środku jest plik <code>manifest.json</code>) i kliknij <em>Wybierz folder</em>.</p>
+  </div>
+</div>
+
+<div class="ok">
+  <strong>Gotowe!</strong> Na liście rozszerzeń powinna pojawić się karta „No Shorts" z włączonym przełącznikiem.
+</div>
+
+<h2>Jak sprawdzić, że działa</h2>
+<p>Wejdź na <strong>youtube.com</strong> i odśwież stronę (klawisz F5). Powinieneś zobaczyć, że:</p>
+<ul>
+  <li>na stronie głównej nie ma sekcji „Shorts" między filmami,</li>
+  <li>w menu po lewej nie ma pozycji „Shorts",</li>
+  <li>na kanałach nie ma zakładki „Shorts",</li>
+  <li>link do Shorts otwiera się jak zwykły film.</li>
+</ul>
+<p>Chcesz porównać? Wyłącz przełącznik na karcie „No Shorts" w <code>chrome://extensions</code>, odśwież YouTube i zobacz różnicę. Potem włącz go z powrotem.</p>
+
+<h2>Dobrze wiedzieć</h2>
+<div class="warn">
+  Po ponownym uruchomieniu przeglądarki Chrome może pokazać komunikat o <strong>rozszerzeniach trybu programisty</strong>. Wybierz, aby je zachować (nie wyłączaj). Ten komunikat zniknie, gdy rozszerzenie trafi do oficjalnego sklepu Chrome.
+</div>
+
+<h2>Instalacja dla dziecka</h2>
+<p>Rozszerzenie wyłączy się, jeśli dziecko je usunie lub wyłączy. Dlatego najlepiej:</p>
+<ul>
+  <li>zainstalować je na koncie, którego dziecko nie może zmieniać, np. w profilu nadzorowanym przez <strong>Google Family Link</strong>,</li>
+  <li>porozmawiać z dzieckiem, po co z niego korzystacie. Rozmowa chroni skuteczniej niż jakiekolwiek narzędzie.</li>
+</ul>
+
+<h2>Coś nie działa?</h2>
+<ul>
+  <li><strong>Nie widzę przycisku „Załaduj rozpakowane".</strong> Sprawdź, czy włączyłeś Tryb programisty (krok 4).</li>
+  <li><strong>Błąd „Nie można wczytać manifestu".</strong> Wybrałeś zły folder. Wskaż ten, w którym bezpośrednio leży plik <code>manifest.json</code> (folder <code>no-shorts</code>).</li>
+  <li><strong>Jakiś Short nadal się pokazuje.</strong> YouTube często zmienia swoją stronę. Zgłoś to nam: <span class="addr">github.com/safenest-oss/no-shorts/issues</span></li>
+</ul>
+
+<footer>
+  No Shorts jest częścią SafeNest – małych, otwartych narzędzi, które czynią Internet bezpieczniejszym dla dzieci. Licencja MIT. Kod i aktualne wersje: github.com/safenest-oss/no-shorts
+</footer>
+
+</body>
+</html>
