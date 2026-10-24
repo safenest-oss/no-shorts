@@ -47,8 +47,11 @@ const FEED_ITEM = [
   "yt-lockup-view-model",
 ].join(",");
 
-// Whole Shorts shelves
-const SHELF = "ytd-reel-shelf-renderer, ytd-rich-shelf-renderer[is-shorts], grid-shelf-view-model";
+// Shelves and sections. A section that links to Shorts but to no regular video
+// is a Shorts shelf (this does not depend on the shelf title or the language).
+const SECTION =
+  "ytd-rich-section-renderer, ytd-rich-shelf-renderer, ytd-reel-shelf-renderer, " +
+  "ytd-shelf-renderer, grid-shelf-view-model";
 
 // Channel tabs and filter chips
 const TAB_OR_CHIP =
@@ -86,11 +89,15 @@ function scan() {
     hide(a.closest(FEED_ITEM));
   });
 
-  // Shorts shelves
-  document.querySelectorAll(SHELF).forEach((shelf) => {
-    if (shelf.matches("ytd-reel-shelf-renderer, ytd-rich-shelf-renderer[is-shorts]") ||
-        shelf.querySelector('a[href*="/shorts/"]')) {
-      hide(shelf);
+  // Shorts shelves (including the section wrapper, so no empty gap is left)
+  document.querySelectorAll(SECTION).forEach((section) => {
+    if (section.matches("ytd-reel-shelf-renderer, ytd-rich-shelf-renderer[is-shorts]")) {
+      hide(section);
+    } else if (
+      section.querySelector('a[href*="/shorts/"]') &&
+      !section.querySelector('a[href*="/watch"]')
+    ) {
+      hide(section);
     }
   });
 

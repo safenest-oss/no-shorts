@@ -17,8 +17,8 @@ ROOT = Path(__file__).resolve().parent.parent
 HTML = (Path(__file__).parent / "mock-youtube.html").read_text()
 
 SHOULD_BE_HIDDEN = ["shorts-a", "shorts-b", "mini-shorts", "short1", "shelf",
-                    "short2", "tab-shorts", "short-late"]
-SHOULD_BE_VISIBLE = ["home", "subs", "video1", "video2", "tab-videos"]
+                    "short2", "tab-shorts", "short-late", "section-shorts"]
+SHOULD_BE_VISIBLE = ["home", "subs", "video1", "video2", "tab-videos", "section-normal"]
 
 with sync_playwright() as p, tempfile.TemporaryDirectory() as profile:
     ctx = p.chromium.launch_persistent_context(
