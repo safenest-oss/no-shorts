@@ -37,7 +37,7 @@ PRIVATE BY DESIGN
 • Free and open source (MIT): https://github.com/safenest-oss/no-shorts
 
 MADE FOR FAMILIES
-No Shorts is the first tool of SafeNest, a collection of small open source tools that make the Internet safer for children. It works well on a child's Chrome profile (including profiles supervised with Google Family Link, where parents choose which extensions are allowed).
+No Shorts is the first tool of SafeNest, a collection of small open source tools that make the Internet safer for children. It is designed for use on a child's Chrome profile.
 
 NOTE
 YouTube changes its pages often, so occasionally a Short may slip through. If you see one, please report it at https://github.com/safenest-oss/no-shorts/issues. The extension works in desktop browsers and does not affect the YouTube mobile app.
@@ -60,7 +60,7 @@ PRYWATNOŚĆ W ZAŁOŻENIACH
 • Darmowe i otwarte (MIT): https://github.com/safenest-oss/no-shorts
 
 DLA RODZIN
-No Shorts to pierwsze narzędzie SafeNest, zbioru małych narzędzi open source, które czynią Internet bezpieczniejszym dla dzieci. Działa na profilu dziecka w Chrome (także nadzorowanym przez Google Family Link, gdzie rodzic decyduje, jakie rozszerzenia są dozwolone).
+No Shorts to pierwsze narzędzie SafeNest, zbioru małych narzędzi open source, które czynią Internet bezpieczniejszym dla dzieci. Jest przeznaczone do użycia na profilu dziecka w Chrome.
 
 UWAGA
 YouTube często zmienia swoje strony, więc czasem jakiś Short może się przebić. Zgłoś to proszę: https://github.com/safenest-oss/no-shorts/issues. Rozszerzenie działa w przeglądarkach na komputerze i nie wpływa na aplikację YouTube na telefonie.
@@ -100,3 +100,11 @@ Do not show a child's profile or any personal information in screenshots.
 - [ ] Test on a Family Link-supervised profile: add the extension from the store link, check whether the parent has to allow extensions
 - [ ] Switch to Public when everything works
 - [ ] Add the store link to both READMEs and to the guides in `installer/`
+
+## Review tips (to avoid rejection)
+
+- Do not imply an affiliation with YouTube or Google (no "official" wording; keep the icon free of YouTube's red logo)
+- Do not claim compatibility you have not tested (e.g. Family Link) until you have tested it
+- Keep name, short description and detailed description consistent and free of keyword stuffing
+- Permission justification and single purpose must match what the code really does
+- Keep the privacy policy URL reachable while the extension is published
