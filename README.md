@@ -38,7 +38,9 @@ Download the new version, replace the folder contents, then click the reload ico
 
 ### Installing for a child (parents)
 
-On your child's computer, use a Chrome profile that your child cannot change, for example a supervised profile managed with Google Family Link, or a managed browser policy that force-installs the extension. A regular extension can be switched off by the user, so it works best together with these controls and a conversation about why you use it.
+**Manual installation does not work on a Chrome profile supervised with Google Family Link.** In our test Developer mode is locked there, and supervised profiles can only add extensions from the Chrome Web Store. For a child's profile, wait for the Chrome Web Store version (tracked in the [issues](../../issues)) and make sure extensions are allowed in Family Link (Controls → Google Chrome and Web → Advanced settings → Extensions).
+
+A regular extension can also be switched off by a child who has full control of the profile, so it works best together with supervision and a conversation about why you use it.
 
 ## How to check that it works
 
@@ -72,11 +74,15 @@ The extension works in desktop browsers. It does not affect the YouTube mobile a
 - [ ] Popup with an on/off toggle and age profiles
 - [ ] Allow-list for selected channels
 - [ ] Firefox support
-- [ ] Publish to the Chrome Web Store
+- [ ] Publish to the Chrome Web Store (listing materials in [`store/LISTING.md`](store/LISTING.md))
 
 ## Contributing
 
 Issues and pull requests are welcome. For selector fixes, just edit `content.css` and describe where the Short appeared. See the SafeNest [contributing guide](https://github.com/safenest-oss/.github/blob/main/CONTRIBUTING.md).
+
+## Privacy
+
+No data is collected. See the [privacy policy](PRIVACY.md).
 
 ## License
 

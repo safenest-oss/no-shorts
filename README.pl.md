@@ -38,7 +38,9 @@ Pobierz nową wersję, podmień zawartość folderu i kliknij ikonę odświeżan
 
 ### Instalacja dla dziecka (rodzice)
 
-Na komputerze dziecka użyj profilu Chrome, którego dziecko nie może zmieniać, np. profilu nadzorowanego przez Google Family Link albo przeglądarki zarządzanej zasadami, które wymuszają instalację rozszerzenia. Zwykłe rozszerzenie można wyłączyć, więc najlepiej działa razem z takimi ustawieniami i rozmową z dzieckiem o tym, po co z niego korzystacie.
+**Ręczna instalacja nie działa na profilu Chrome nadzorowanym przez Google Family Link.** W naszym teście Tryb programisty jest tam zablokowany, a profile nadzorowane mogą dodawać rozszerzenia tylko ze sklepu Chrome. Na profil dziecka poczekaj na wersję ze sklepu Chrome (postęp w [zgłoszeniach](../../issues)) i upewnij się, że rozszerzenia są dozwolone w Family Link (Ustawienia → Google Chrome i internet → Ustawienia zaawansowane → Rozszerzenia).
+
+Zwykłe rozszerzenie może też wyłączyć dziecko, które ma pełną kontrolę nad profilem, więc najlepiej działa razem z nadzorem i rozmową o tym, po co z niego korzystacie.
 
 ## Jak sprawdzić, że działa
 
@@ -61,6 +63,10 @@ Jeśli jakiś Short się przebije, zobacz sekcję poniżej.
 YouTube regularnie zmienia kod strony, więc część selektorów może z czasem przestać działać. Jeśli coś się przebije, [zgłoś problem](../../issues/new/choose) z adresem strony i, jeśli potrafisz, nazwą elementu z narzędzi deweloperskich (DevTools).
 
 Rozszerzenie działa w przeglądarkach na komputerze. Nie wpływa na aplikację YouTube na telefonie.
+
+## Prywatność
+
+Rozszerzenie nie zbiera żadnych danych. Zobacz [politykę prywatności](PRIVACY.md) (po angielsku).
 
 ## Licencja
 

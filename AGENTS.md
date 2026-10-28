@@ -21,9 +21,16 @@ No Shorts is a Chrome extension (Manifest V3) that removes YouTube Shorts. It is
 | `content.css` | Hides Shorts UI. **One selector per rule on purpose**, so one unsupported selector cannot drop the rest |
 | `content.js` | Redirects `/shorts/ID` to `/watch?v=ID` and hides Shorts by link and visible text (fallback when YouTube renames elements) |
 | `installer/` | Step-by-step guides for parents: `START-HERE.html` (English) and `START-TUTAJ.html` (Polish). Keep them in sync |
+| `scripts/build-store.sh` | Builds `dist/no-shorts-store-vX.Y.Z.zip` for the Chrome Web Store dashboard (manifest at the zip root) |
+| `store/LISTING.md` | Texts, permission justifications and checklist for the Chrome Web Store listing |
+| `PRIVACY.md` | Privacy policy (its URL is used in the store listing) |
 | `scripts/build-release.sh` | Builds `dist/no-shorts-vX.Y.Z.zip` (guides + extension folder) |
 | `.github/workflows/release.yml` | When a GitHub release is published, builds the zip and attaches it |
 | `tests/` | End-to-end test with Playwright against a simplified mock of YouTube |
+
+## Installing on a child's profile
+
+Chrome profiles supervised with Google Family Link block loading unpacked extensions (Developer mode is locked) and only allow extensions from the Chrome Web Store, so the store version is required for the main use case. Keep the guides and READMEs consistent with this.
 
 ## How YouTube works (gotchas)
 

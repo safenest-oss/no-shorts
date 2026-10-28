@@ -16,6 +16,7 @@ rm -rf dist
 mkdir -p "${STAGE}/no-shorts"
 
 cp manifest.json content.css content.js LICENSE "${STAGE}/no-shorts/"
+cp -r icons "${STAGE}/no-shorts/icons"
 cp installer/START-HERE.html installer/START-TUTAJ.html "${STAGE}/"
 
 (cd "${STAGE}" && zip -r -q "../no-shorts-v${VERSION}.zip" .)

@@ -1,14 +1,27 @@
 {
   "manifest_version": 3,
   "name": "No Shorts",
-  "version": "1.0.2",
-  "description": "Blokuje YouTube Shorts: ukrywa je w feedzie, wyszukiwarce i menu oraz przekierowuje linki do zwykłego odtwarzacza.",
+  "version": "1.0.3",
+  "description": "Hides YouTube Shorts: removes them from the feed, search, menus and channels, and opens Shorts links as regular videos.",
   "content_scripts": [
     {
-      "matches": ["*://www.youtube.com/*", "*://m.youtube.com/*"],
-      "js": ["content.js"],
-      "css": ["content.css"],
+      "matches": [
+        "*://www.youtube.com/*",
+        "*://m.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
       "run_at": "document_start"
     }
-  ]
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
 }
