@@ -12,7 +12,7 @@ VERSION=$(python3 -c "import json; print(json.load(open('manifest.json'))['versi
 STAGE="dist/stage"
 OUT="dist/no-shorts-v${VERSION}.zip"
 
-rm -rf dist
+rm -rf "${STAGE}" "${OUT}"
 mkdir -p "${STAGE}/no-shorts"
 
 cp manifest.json content.css content.js LICENSE "${STAGE}/no-shorts/"
