@@ -12,6 +12,11 @@ No Shorts is a Chrome extension (Manifest V3) that removes YouTube Shorts. It is
 - **Small and readable:** parents and reviewers should be able to understand the code.
 - **Age-aware protection:** strict for young children, lighter for teenagers.
 - **Honest limits:** document what the tool cannot do (e.g. a child can disable an extension).
+- **Transparency:** open source (MIT), public decisions and roadmap in GitHub issues, plain-language docs for non-technical parents, sources for every claim we make.
+- **Community first:** small tools anyone can understand, fork and improve; welcome contributions, reviews and recommendations; credit contributors.
+- **Safety and education:** protect children and teenagers online and help families talk about it. Teach, don't scare.
+- **Security by design:** least privilege, minimal dependencies, no collected data, responsible disclosure via SECURITY.md. Innovate carefully: new ideas must not weaken privacy or security.
+- **Funding later, trust now:** build good products and a community first. Any future funding (investors, sponsors, partner organisations) must not compromise the principles above, especially privacy and openness.
 
 ## Layout
 
