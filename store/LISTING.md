@@ -79,8 +79,9 @@ YouTube często zmienia swoje strony, więc czasem jakiś Short może się przeb
 | Asset | Size | Status |
 |---|---|---|
 | Store icon | 128x128 | Done: `icons/icon128.png` |
-| Screenshots (1-5) | 1280x800 or 640x400 | **To do – take on real YouTube** |
-| Small promo tile | 440x280 | Optional, recommended |
+| Screenshots (1-5) | 1280x800 or 640x400 | Done (v2, amber brand): hero and before/after. Optional: a channel page and a search results page |
+| Small promo tile | 440x280 | Done (v2) |
+| Marquee promo tile | 1400x560 | Done (v2), optional |
 
 Screenshot ideas (take them yourself on the real site, with the extension off and on):
 1. YouTube home page with the extension on (no Shorts shelf, no "Shorts" in the menu)
