@@ -15,7 +15,9 @@ No tracking, no network requests, no special permissions. The extension only run
 
 ## Installation
 
-The extension is not yet in the Chrome Web Store, so you install it manually. It takes about a minute and works in Chrome, Edge, Brave and Opera on a computer.
+**Easiest:** install from the [Chrome Web Store](https://chromewebstore.google.com/detail/no-shorts/mdfcjmongbnjhgmaigbeohlkekepkohp) and click **Add to Chrome**. It works in Chrome, Edge, Brave and Opera on a computer.
+
+Prefer to install it manually (for example from source)? It takes about a minute, see below.
 
 ### 1. Get the files
 
@@ -30,7 +32,7 @@ The extension is not yet in the Chrome Web Store, so you install it manually. It
 4. Select the `no-shorts` folder (the one containing `manifest.json`) and confirm
 5. "No Shorts" appears on the list of extensions. Optionally pin it with the puzzle icon in the toolbar
 
-> Chrome may show a "Disable developer mode extensions" notice when you restart the browser. Choose to keep the extension. This message disappears once the extension is available in the Chrome Web Store.
+> Chrome may show a "Disable developer mode extensions" notice when you restart the browser. Choose to keep the extension. This message does not appear when you install from the Chrome Web Store.
 
 ### 3. Updating
 
@@ -38,7 +40,7 @@ Download the new version, replace the folder contents, then click the reload ico
 
 ### Installing for a child (parents)
 
-**Manual installation does not work on a Chrome profile supervised with Google Family Link.** In our test Developer mode is locked there, and supervised profiles can only add extensions from the Chrome Web Store. For a child's profile, wait for the Chrome Web Store version (tracked in the [issues](../../issues)) and make sure extensions are allowed in Family Link (Controls → Google Chrome and Web → Advanced settings → Extensions).
+**Manual installation does not work on a Chrome profile supervised with Google Family Link.** In our test Developer mode is locked there, and supervised profiles can only add extensions from the Chrome Web Store. For a child's profile, install from the [Chrome Web Store](https://chromewebstore.google.com/detail/no-shorts/mdfcjmongbnjhgmaigbeohlkekepkohp) and make sure extensions are allowed in Family Link (Controls → Google Chrome and Web → Advanced settings → Extensions). We are still verifying these steps on a real supervised profile (see [issues](../../issues)).
 
 A regular extension can also be switched off by a child who has full control of the profile, so it works best together with supervision and a conversation about why you use it.
 
@@ -74,7 +76,7 @@ The extension works in desktop browsers. It does not affect the YouTube mobile a
 - [ ] Popup with an on/off toggle and age profiles
 - [ ] Allow-list for selected channels
 - [ ] Firefox support
-- [ ] Publish to the Chrome Web Store (listing materials in [`store/LISTING.md`](store/LISTING.md))
+- [x] Publish to the Chrome Web Store (listing materials in [`store/LISTING.md`](store/LISTING.md))
 
 ## Contributing
 

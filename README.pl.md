@@ -15,7 +15,9 @@ Bez śledzenia, bez zapytań sieciowych, bez specjalnych uprawnień. Rozszerzeni
 
 ## Instalacja
 
-Rozszerzenia nie ma jeszcze w sklepie Chrome, więc instalujesz je ręcznie. Zajmuje to około minuty i działa w Chrome, Edge, Brave i Operze na komputerze.
+**Najprościej:** zainstaluj ze [sklepu Chrome](https://chromewebstore.google.com/detail/no-shorts/mdfcjmongbnjhgmaigbeohlkekepkohp) i kliknij **Dodaj do Chrome**. Działa w Chrome, Edge, Brave i Operze na komputerze.
+
+Wolisz zainstalować ręcznie (np. ze źródeł)? Zajmuje to około minuty, opis poniżej.
 
 ### 1. Pobierz pliki
 
@@ -30,7 +32,7 @@ Rozszerzenia nie ma jeszcze w sklepie Chrome, więc instalujesz je ręcznie. Zaj
 4. Wskaż folder, w którym jest plik `manifest.json` (w paczce wydania to `no-shorts`), i zatwierdź
 5. „No Shorts" pojawi się na liście rozszerzeń. Możesz je przypiąć ikoną puzzla na pasku narzędzi
 
-> Po ponownym uruchomieniu przeglądarki Chrome może wyświetlić komunikat o wyłączeniu rozszerzeń trybu programisty. Wybierz zachowanie rozszerzenia. Komunikat zniknie, gdy rozszerzenie trafi do sklepu Chrome.
+> Po ponownym uruchomieniu przeglądarki Chrome może wyświetlić komunikat o wyłączeniu rozszerzeń trybu programisty. Wybierz zachowanie rozszerzenia. Przy instalacji ze sklepu Chrome ten komunikat się nie pojawia.
 
 ### 3. Aktualizacja
 
@@ -38,7 +40,7 @@ Pobierz nową wersję, podmień zawartość folderu i kliknij ikonę odświeżan
 
 ### Instalacja dla dziecka (rodzice)
 
-**Ręczna instalacja nie działa na profilu Chrome nadzorowanym przez Google Family Link.** W naszym teście Tryb programisty jest tam zablokowany, a profile nadzorowane mogą dodawać rozszerzenia tylko ze sklepu Chrome. Na profil dziecka poczekaj na wersję ze sklepu Chrome (postęp w [zgłoszeniach](../../issues)) i upewnij się, że rozszerzenia są dozwolone w Family Link (Ustawienia → Google Chrome i internet → Ustawienia zaawansowane → Rozszerzenia).
+**Ręczna instalacja nie działa na profilu Chrome nadzorowanym przez Google Family Link.** W naszym teście Tryb programisty jest tam zablokowany, a profile nadzorowane mogą dodawać rozszerzenia tylko ze sklepu Chrome. Na profil dziecka zainstaluj ze [sklepu Chrome](https://chromewebstore.google.com/detail/no-shorts/mdfcjmongbnjhgmaigbeohlkekepkohp) i upewnij się, że rozszerzenia są dozwolone w Family Link (Ustawienia → Google Chrome i internet → Ustawienia zaawansowane → Rozszerzenia). Te kroki wciąż weryfikujemy na prawdziwym profilu nadzorowanym (zobacz [zgłoszenia](../../issues)).
 
 Zwykłe rozszerzenie może też wyłączyć dziecko, które ma pełną kontrolę nad profilem, więc najlepiej działa razem z nadzorem i rozmową o tym, po co z niego korzystacie.
 
