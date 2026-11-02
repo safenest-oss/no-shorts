@@ -18,6 +18,14 @@ No Shorts is a Chrome extension (Manifest V3) that removes YouTube Shorts. It is
 - **Security by design:** least privilege, minimal dependencies, no collected data, responsible disclosure via SECURITY.md. Innovate carefully: new ideas must not weaken privacy or security.
 - **Funding later, trust now:** build good products and a community first. Any future funding (investors, sponsors, partner organisations) must not compromise the principles above, especially privacy and openness.
 
+## Branching and releases
+
+- `main` is always what is released (the Chrome Web Store version and the latest GitHub release). Never commit directly to it once branch protection is on.
+- `develop` is the integration branch. Branch from it: `feat/<topic>`, `fix/<topic>`, `docs/<topic>`, then open a pull request into `develop`.
+- Release: open a pull request `develop` -> `main`, bump `version` in `manifest.json`, merge, then publish a GitHub release tagged `v<version>` (the workflow builds the zip). Upload the store zip (`scripts/build-store.sh`) to the Chrome Web Store.
+- Urgent fix of a released version: branch from `main` (`fix/<topic>`), pull request into `main`, then merge `main` back into `develop`.
+- Use Conventional Commits. Commits are authored by the repo owner (see below).
+
 ## Layout
 
 | Path | Purpose |
