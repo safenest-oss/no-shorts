@@ -22,7 +22,7 @@ No Shorts is a Chrome extension (Manifest V3) that removes YouTube Shorts. It is
 
 - `main` is always what is released (the Chrome Web Store version and the latest GitHub release). Never commit directly to it once branch protection is on.
 - `develop` is the integration branch. Branch from it: `feat/<topic>`, `fix/<topic>`, `docs/<topic>`, then open a pull request into `develop`.
-- Release: open a pull request `develop` -> `main`, bump `version` in `manifest.json`, merge, then publish a GitHub release tagged `v<version>` (the workflow builds the zip). Upload the store zip (`scripts/build-store.sh`) to the Chrome Web Store.
+- Release: open a pull request `develop` -> `main`, bump `version` in `manifest.json`, merge, then publish a GitHub release tagged `v<version>` with **Target: `main`** (the default branch is `develop`, so pick `main` explicitly in the release form). The workflow builds the zip. Upload the store zip (`scripts/build-store.sh`) to the Chrome Web Store.
 - Urgent fix of a released version: branch from `main` (`fix/<topic>`), pull request into `main`, then merge `main` back into `develop`.
 - Use Conventional Commits. Commits are authored by the repo owner (see below).
 
