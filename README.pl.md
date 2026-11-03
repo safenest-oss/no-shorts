@@ -40,7 +40,7 @@ Pobierz nową wersję, podmień zawartość folderu i kliknij ikonę odświeżan
 
 ### Instalacja dla dziecka (rodzice)
 
-**Ręczna instalacja nie działa na profilu Chrome nadzorowanym przez Google Family Link.** W naszym teście Tryb programisty jest tam zablokowany, a profile nadzorowane mogą dodawać rozszerzenia tylko ze sklepu Chrome. Na profil dziecka zainstaluj ze [sklepu Chrome](https://chromewebstore.google.com/detail/no-shorts/mdfcjmongbnjhgmaigbeohlkekepkohp) i upewnij się, że rozszerzenia są dozwolone w Family Link (Ustawienia → Google Chrome i internet → Ustawienia zaawansowane → Rozszerzenia). Te kroki wciąż weryfikujemy na prawdziwym profilu nadzorowanym (zobacz [zgłoszenia](../../issues)).
+**Ręczna instalacja nie działa na profilu Chrome nadzorowanym przez Google Family Link.** W naszym teście Tryb programisty jest tam zablokowany, a profile nadzorowane mogą dodawać rozszerzenia tylko ze sklepu Chrome. Na profil dziecka zainstaluj ze [sklepu Chrome](https://chromewebstore.google.com/detail/no-shorts/mdfcjmongbnjhgmaigbeohlkekepkohp). Przetestowane na profilach nadzorowanych: dziecko klika **Poproś rodzica**, a Ty zatwierdzasz hasłem. Ustawienie Family Link **Rozszerzenia** (Ustawienia → Google Chrome i internet → Ustawienia zaawansowane) zostaw wyłączone, bo inaczej dziecko doda rozszerzenia bez pytania. **Ograniczenie:** dziecko na profilu nadzorowanym może nadal usunąć lub wyłączyć rozszerzenie bez hasła, bo Google nie wymaga zgody rodzica na usunięcie. Ponowne dodanie wymaga wtedy Twojej zgody. Pomysły na zablokowanie tego są w [zgłoszeniach](../../issues).
 
 Zwykłe rozszerzenie może też wyłączyć dziecko, które ma pełną kontrolę nad profilem, więc najlepiej działa razem z nadzorem i rozmową o tym, po co z niego korzystacie.
 
