@@ -42,6 +42,8 @@ Download the new version, replace the folder contents, then click the reload ico
 
 **Manual installation does not work on a Chrome profile supervised with Google Family Link.** In our test Developer mode is locked there, and supervised profiles can only add extensions from the Chrome Web Store. For a child's profile, install from the [Chrome Web Store](https://chromewebstore.google.com/detail/no-shorts/mdfcjmongbnjhgmaigbeohlkekepkohp). Tested on supervised profiles: the child taps **Ask a parent** and you approve with your password. Keep the Family Link setting **Extensions** (Controls → Google Chrome and web → Advanced settings) turned off, otherwise the child can add extensions without asking. **Limit:** a supervised child can still remove or disable the extension without a password, because Google does not require parent approval for removal. Removing it means re-adding needs your approval again. Ideas to lock it are tracked in the [issues](../../issues).
 
+**On phones** (no extensions in the YouTube app or mobile Chrome), use YouTube's Shorts time limit in Family Link: see [Limit Shorts on phones](docs/youtube-shorts-limit.md).
+
 A regular extension can also be switched off by a child who has full control of the profile, so it works best together with supervision and a conversation about why you use it.
 
 ## How to check that it works
