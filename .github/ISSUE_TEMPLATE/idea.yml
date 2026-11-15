@@ -1,0 +1,26 @@
+name: Idea or request
+description: Suggest an improvement for families or schools.
+title: "Idea or request"
+labels:
+  - idea
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve, and for which family or school?
+      description: Describe the situation this idea would help with.
+    validations:
+      required: true
+  - type: input
+    id: age-range
+    attributes:
+      label: Who is this for? (age range)
+      placeholder: For example, ages 8–12
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried so far?
+    validations:
+      required: true
