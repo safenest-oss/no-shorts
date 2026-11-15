@@ -2,7 +2,7 @@
 
 Polski | [English](README.md)
 
-Malutkie rozszerzenie do Chrome (Manifest V3), które usuwa YouTube Shorts. Część [SafeNest](https://github.com/safenest-oss), zbioru małych narzędzi open source, które czynią Internet bezpieczniejszym dla dzieci.
+Malutkie rozszerzenie do Chrome (Manifest V3), które usuwa YouTube Shorts. Część [SafeNest](https://github.com/safenest-oss), zbioru małych narzędzi open source, które czynią Internet bezpieczniejszym dla dzieci. Odwiedź [safenest-oss.org](https://safenest-oss.org/pl/).
 
 ## Co robi
 

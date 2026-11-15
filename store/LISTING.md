@@ -10,7 +10,7 @@ Everything needed to fill in the Chrome Web Store developer dashboard. Copy the 
 | Category | Productivity |
 | Language | English (add Polish as a second language) |
 | Visibility | Start with **Unlisted** to test the parent-approval flow, then switch to **Public** |
-| Website | https://github.com/safenest-oss/no-shorts |
+| Website | https://safenest-oss.org/ |
 | Support URL | https://github.com/safenest-oss/no-shorts/issues |
 | Privacy policy URL | https://github.com/safenest-oss/no-shorts/blob/main/PRIVACY.md |
 
