@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: GitHub Discussions
+    url: https://github.com/safenest-oss/no-shorts/discussions
+    about: Ask questions or share what you have made.
+  - name: Report a security vulnerability
+    url: https://github.com/safenest-oss/no-shorts/security/advisories/new
+    about: Report security problems privately. See SECURITY.md.

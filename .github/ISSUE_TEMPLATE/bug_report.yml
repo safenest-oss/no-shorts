@@ -1,0 +1,44 @@
+name: A Short is still visible
+description: Report a Short that the extension did not hide.
+title: "A Short is still visible"
+body:
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      description: For example, Chrome 130.
+    validations:
+      required: true
+  - type: input
+    id: extension-version
+    attributes:
+      label: Extension version
+      description: Find this on the extension's details page in Chrome.
+    validations:
+      required: true
+  - type: dropdown
+    id: location
+    attributes:
+      label: Where does the Short appear?
+      options:
+        - Home
+        - Search
+        - Channel page
+        - Sidebar
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+      description: Tell us what you expected the extension to hide.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (optional)
+      description: You can paste or attach a screenshot. Do not include account names, personal data or other people's information in screenshots.
+    validations:
+      required: false

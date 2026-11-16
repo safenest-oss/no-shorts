@@ -10,6 +10,8 @@ Thanks for helping make the Internet safer for children. This project is part of
 
 ## Workflow
 
+Use the issue forms to report a bug or share an idea.
+
 1. Open or pick an issue (YouTube changes its page often, so reports with the page URL and the element name from DevTools are very valuable).
 2. Fork the repo, branch from `develop` (`fix/<topic>`, `feat/<topic>`, `docs/<topic>`).
 3. Run the test: `python3 tests/e2e.py` (needs Playwright with Chromium).
