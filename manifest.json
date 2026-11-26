@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "No Shorts",
   "version": "1.0.3",
-  "description": "Hides YouTube Shorts: removes them from the feed, search, menus and channels, and opens Shorts links as regular videos.",
+  "description": "Hides YouTube Shorts in feeds, search, menus and channels. Shorts links open as regular videos.",
   "content_scripts": [
     {
       "matches": [
