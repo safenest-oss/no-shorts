@@ -37,6 +37,8 @@ No Shorts is a Chrome extension (Manifest V3) that removes YouTube Shorts. It is
 | `scripts/build-store.sh` | Builds `dist/no-shorts-store-vX.Y.Z.zip` for the Chrome Web Store dashboard (manifest at the zip root) |
 | `store/LISTING.md` | Texts, permission justifications and checklist for the Chrome Web Store listing |
 | `PRIVACY.md` | Privacy policy (its URL is used in the store listing) |
+| `scripts/build-safari.sh` | Builds `dist/no-shorts-safari-vX.Y.Z.zip` (a folder to load as a temporary extension in Safari on macOS) and checks Apple's 112-character limit on the manifest description |
+| `docs/safari-test.md`, `docs/safari-test.pl.md` | How to test the extension in Safari on a Mac. Keep them in sync |
 | `scripts/build-release.sh` | Builds `dist/no-shorts-vX.Y.Z.zip` (guides + extension folder) |
 | `.github/workflows/release.yml` | When a GitHub release is published, builds the zip and attaches it |
 | `tests/` | End-to-end test with Playwright against a simplified mock of YouTube |
